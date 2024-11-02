@@ -7,11 +7,13 @@ import VideoPreview from '@/components/videoPreview';
 import Filter from '@/components/filter';
 import Ranking from '@/components/ranking';
 import Banner from '@/components/banner';
+import Header from '@/components/header';
 
 function App() {
 
   return (
     <>
+      <Header />
       <Ranking />
       <Banner />
       <Nav />
