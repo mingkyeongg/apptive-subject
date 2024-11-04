@@ -1,3 +1,8 @@
+# 구현 페이지
+<img width="299" alt="스크린샷 2024-11-04 오후 5 47 41" src="https://github.com/user-attachments/assets/ed063d66-c5fd-4bb5-9e5a-f1b7f0ca577a">
+<img width="311" alt="스크린샷 2024-11-04 오후 5 48 03" src="https://github.com/user-attachments/assets/6133cd11-2091-4617-a1a6-bbba5d9959f1">
+
+
 # Q. 배열을 렌더링할 때, 각 컴포넌트에 key값을 만들어 전달해줘야 합니다. key는 왜 필요한 걸까요? key값을 정하는 기준은 무엇인가요?
 
 ```js
