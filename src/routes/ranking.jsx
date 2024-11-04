@@ -1,7 +1,16 @@
+import RankingList from "@/components/rankingList";
+import styled from "styled-components";
+
+const RankingListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+`;
+
 export default function Ranking() {
   return (
-  <div>
-    <h1>Ranking</h1>
-  </div>
+    <RankingListContainer>
+      <RankingList />
+    </RankingListContainer>
   );
 }
