@@ -63,7 +63,7 @@ export default function RankingElement({ rank, title, viewCount, thumbnail, like
       <Thumbnail src={thumbnail} alt="thumbnail" />
       <TitleContainer>
         <Title>{title}</Title>
-        <ViewCount>{viewCount}</ViewCount>
+        <ViewCount>조회수 {viewCount}</ViewCount>
       </TitleContainer>
       <LikeContainer>
         <Icon src={heartIcon} alt="heart" />

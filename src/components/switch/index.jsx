@@ -43,7 +43,7 @@ export default function Switch() {
         active={activeButton === 'cumulative'}
         onClick={() => setActiveButton('cumulative')}
       >
-        전체 조회수 순위
+        누적 조회수 순위
       </SwitchButton>
     </SwitchContainer>
   );
