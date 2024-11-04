@@ -2,6 +2,11 @@ import videoPreview from '@/assets/image/video_preview.jpeg';
 import styled from 'styled-components';
 import heartIcon from '@/assets/icon/heart.svg';
 
+const VideoPreviewContainer = styled.div`
+  display: flex;
+  gap: 20px;
+}`;
+
 const CardContainer = styled.div`
   position: relative;
   width: 150px;
@@ -53,16 +58,29 @@ const SubText = styled.p`
 
 export default function VideoPreview() {
   return (
-    <CardContainer>
-      <Image src={videoPreview} alt="Video Preview" />
-      <Overlay>
-        <IconContainer>
-          <Icon src={heartIcon} alt="heart"/>
-          <span>123</span>
-        </IconContainer>
-        <Title>맛집 어쩌고저쩌고 123위</Title>
-        <SubText>조회수 3억 8천만회</SubText>
-      </Overlay>
-    </CardContainer>
+    <VideoPreviewContainer>
+      <CardContainer>
+        <Image src={videoPreview} alt="Video Preview" />
+        <Overlay>
+          <IconContainer>
+            <Icon src={heartIcon} alt="heart"/>
+            <span>123</span>
+          </IconContainer>
+          <Title>맛집 어쩌고저쩌고 123위</Title>
+          <SubText>조회수 3억 8천만회</SubText>
+        </Overlay>
+      </CardContainer>
+      <CardContainer>
+        <Image src={videoPreview} alt="Video Preview" />
+        <Overlay>
+          <IconContainer>
+            <Icon src={heartIcon} alt="heart"/>
+            <span>123</span>
+          </IconContainer>
+          <Title>맛집 어쩌고저쩌고 123위</Title>
+          <SubText>조회수 3억 8천만회</SubText>
+        </Overlay>
+      </CardContainer>
+    </VideoPreviewContainer>
   );
 }

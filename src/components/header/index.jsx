@@ -6,7 +6,8 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  margin-top: 30px;
+  width: 325px;
 `;
 
 const Heading = styled.h1`

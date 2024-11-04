@@ -21,6 +21,7 @@ const ImgContainer = styled.div`
 const NavigationContainer = styled.div`
   width: 100%;
   display: flex;
+  width: 325px;
 }`;
 
 function Navigation() {
