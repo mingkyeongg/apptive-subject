@@ -3,11 +3,16 @@ import RankingIcon from '@/assets/icon/Ranking.svg';
 import ShortformIcon from '@/assets/icon/Shortform.svg';
 import UploadIcon from '@/assets/icon/Upload.svg';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
 
 const ImgContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   img {
     width: 24px;
@@ -19,31 +24,43 @@ const ImgContainer = styled.div`
 `;
 
 const NavigationContainer = styled.div`
-  width: 100%;
   display: flex;
-  width: 325px;
-}`;
+  justify-content: space-around;
+  width: 375px;
+  height: 58px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  align-items: center;
+`;
 
 function Navigation() {
   return (
-  <NavigationContainer>
-    <ImgContainer>
-      <img src={HomeIcon} alt="Home" />
-      <p>홈</p>
-    </ImgContainer>
-    <ImgContainer>
-      <img src={RankingIcon} alt="Ranking" />
-      <p>랭킹</p>
-    </ImgContainer>
-    <ImgContainer>
-      <img src={ShortformIcon} alt="Shortform" />
-      <p>숏폼</p>
-    </ImgContainer>
-    <ImgContainer>
-      <img src={UploadIcon} alt="Upload" />
-      <p>업로드</p>
-    </ImgContainer>
-  </NavigationContainer>
+    <NavigationContainer>
+      <StyledLink to="/">
+        <ImgContainer>
+          <img src={HomeIcon} alt="Home" />
+          <p>홈</p>
+        </ImgContainer>
+      </StyledLink>
+      <StyledLink to="/ranking">
+        <ImgContainer>
+          <img src={RankingIcon} alt="Ranking" />
+          <p>랭킹</p>
+        </ImgContainer>
+      </StyledLink>
+      <StyledLink to="/shortform">
+        <ImgContainer>
+          <img src={ShortformIcon} alt="Shortform" />
+          <p>숏폼</p>
+        </ImgContainer>
+      </StyledLink>
+      <StyledLink to="/upload">
+        <ImgContainer>
+          <img src={UploadIcon} alt="Upload" />
+          <p>업로드</p>
+        </ImgContainer>
+      </StyledLink>
+    </NavigationContainer>
   );
 }
 

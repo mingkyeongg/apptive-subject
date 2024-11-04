@@ -5,25 +5,24 @@ import Ranking from '@/components/ranking';
 import Banner from '@/components/banner';
 import Header from '@/components/header';
 import styled from 'styled-components';
-
-const HomeContainer = styled.div`
+  
+  const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 375px;
-  height: 812px;
   padding: 30px;
+  gap: 20px;
+  overflow: scroll;
+  box-sizing: border-box;
 `;
 
 export default function Home() {
   return (
-    <HomeContainer>
+      <ContentContainer>
         <Header />
         <Ranking />
         <Banner />
         <Filter />
         <VideoPreview />
-        <Nav />
-    </HomeContainer>
+      </ContentContainer>
   );
 }
